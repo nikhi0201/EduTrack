@@ -95,7 +95,6 @@ export const StudentsPage: React.FC = () => {
   // Handle Student Checkbox Selection (single student)
   const handleSelectStudent = (student: StudentTableItem) => {
     if (selectedStudentId === student.id) {
-      // Toggle off if already selected
       setSelectedStudentId(null);
     } else {
       setSelectedStudentId(student.id);
@@ -127,14 +126,12 @@ export const StudentsPage: React.FC = () => {
     marks: Record<SubjectName, Record<MonthName, number>>;
   }) => {
     if (editingStudentDetail) {
-      // Update existing student
       await apiService.updateStudent(editingStudentDetail.id, payload);
       showToast(`Student ${payload.name} updated successfully!`, 'success');
       if (selectedStudentId === editingStudentDetail.id) {
         fetchStudentAnalytics(editingStudentDetail.id);
       }
     } else {
-      // Create new student
       const newSt = await apiService.createStudent(payload);
       showToast(`Student ${payload.name} created successfully!`, 'success');
       setSelectedStudentId(newSt.id);
@@ -193,14 +190,14 @@ export const StudentsPage: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-3">
-            {/* Search Input Bar with Fuzzy Trigram indication */}
+            {/* Search Input Bar */}
             <div className="relative w-full sm:w-64">
               <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" />
               <input
                 type="text"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                placeholder="Fuzzy Search student (e.g. Rhaul)..."
+                placeholder="Search student by name (e.g. Rahul)..."
                 className="w-full pl-9 pr-4 py-2 rounded-xl text-xs bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500 transition shadow-sm"
               />
             </div>

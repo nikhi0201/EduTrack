@@ -42,7 +42,7 @@ export const DashboardPage: React.FC = () => {
             Dashboard Overview
           </h2>
           <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
-            Real-time aggregate performance metrics 
+            Real-time aggregate performance metrics and student academic trends
           </p>
         </div>
 
@@ -67,7 +67,7 @@ export const DashboardPage: React.FC = () => {
         <DashboardCard
           title="1. Total Students"
           value={isLoading ? '...' : stats?.summary.totalStudents ?? 0}
-          subtitle="Registered students"
+          subtitle="Active student roster"
           icon={Users}
           badgeText="Active Roster"
           badgeType="info"
@@ -96,7 +96,7 @@ export const DashboardPage: React.FC = () => {
           value={isLoading ? '...' : stats?.summary.studentsNeedingAttention ?? 0}
           subtitle="Students with overall avg < 50%"
           icon={AlertTriangle}
-          badgeText="Requires Intervention"
+          badgeText="Requires Support"
           badgeType="danger"
         />
       </div>

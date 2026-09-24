@@ -47,7 +47,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onReplayIntro }) => {
       <main className="relative z-10 max-w-5xl mx-auto px-6 py-16 sm:py-24 text-center space-y-8 flex-1 flex flex-col justify-center">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/90 border border-brand-500/30 text-brand-300 text-xs font-semibold uppercase tracking-wider backdrop-blur-md mx-auto shadow-xl">
           <Sparkles className="w-4 h-4 text-brand-400" />
-          Production-Grade Student Performance Analytics Platform
+          Student Performance Analytics Platform
         </div>
 
         <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-tight leading-[1.15]">
@@ -58,7 +58,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onReplayIntro }) => {
         </h1>
 
         <p className="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
-          Track subject performance trends across Telugu, Hindi, English, and Social Studies. Seamless student management with server-side trigram fuzzy search and dynamic PostgreSQL analytics.
+          Track student performance trends across key academic subjects with real-time progress analytics, automated reporting, and intuitive student roster management.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
@@ -77,9 +77,9 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onReplayIntro }) => {
             <div className="w-10 h-10 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center">
               <BarChart3 className="w-5 h-5" />
             </div>
-            <h3 className="text-base font-bold text-white">4 Subject Trend Lines</h3>
+            <h3 className="text-base font-bold text-white">Subject Trend Lines</h3>
             <p className="text-xs text-slate-400 leading-relaxed">
-              Interactive Recharts line charts tracking student progress across 6 monthly assessment windows.
+              Interactive performance charts tracking student progress across monthly assessment windows.
             </p>
           </div>
 
@@ -87,9 +87,9 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onReplayIntro }) => {
             <div className="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center">
               <Users className="w-5 h-5" />
             </div>
-            <h3 className="text-base font-bold text-white">Trigram Fuzzy Search</h3>
+            <h3 className="text-base font-bold text-white">Smart Student Search</h3>
             <p className="text-xs text-slate-400 leading-relaxed">
-              PostgreSQL similarity search tolerates typos like "Rhaul" for "Rahul" with server-side pagination.
+              Intelligent instant search with typo tolerance and seamless student roster pagination.
             </p>
           </div>
 
@@ -97,9 +97,9 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onReplayIntro }) => {
             <div className="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
               <ShieldCheck className="w-5 h-5" />
             </div>
-            <h3 className="text-base font-bold text-white">JWT & bcrypt Security</h3>
+            <h3 className="text-base font-bold text-white">Enterprise Security</h3>
             <p className="text-xs text-slate-400 leading-relaxed">
-              Protected Express REST API routes with salted bcrypt password hashing and token persistence.
+              Secure administrator portal with protected access controls and session management.
             </p>
           </div>
         </div>
@@ -107,7 +107,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onReplayIntro }) => {
 
       {/* Footer */}
       <footer className="relative z-10 max-w-7xl mx-auto w-full px-6 py-6 border-t border-slate-900 text-center text-xs text-slate-500">
-        EduTrack Student Performance Analytics Platform • Powered by PostgreSQL & React
+        EduTrack Student Performance Analytics Platform • All rights reserved.
       </footer>
     </div>
   );

@@ -3,6 +3,10 @@
     {
       "source": "/api/:path*",
       "destination": "https://edutrack-backend-liud.onrender.com/api/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }

@@ -34,6 +34,12 @@ export const AnalyticsPage: React.FC = () => {
             Comparative performance analytics across subjects, months, and academic classes
           </p>
         </div>
+
+        <div className="flex items-center gap-2">
+          <span className="px-3 py-1 rounded-full text-xs font-semibold bg-brand-50 dark:bg-brand-950/60 text-brand-600 dark:text-brand-400 border border-brand-200 dark:border-brand-800">
+            Live Analytics Sync
+          </span>
+        </div>
       </div>
 
       {/* Main Analytics Charts */}

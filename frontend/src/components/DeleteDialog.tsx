@@ -40,7 +40,7 @@ export const DeleteDialog: React.FC<DeleteDialogProps> = ({
           </h3>
           <p className="mt-2 text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
             This action cannot be undone. This will permanently delete the student record for{' '}
-            <span className="font-semibold text-slate-800 dark:text-slate-200">{student.name}</span> and all associated monthly performance marks from PostgreSQL.
+            <span className="font-semibold text-slate-800 dark:text-slate-200">{student.name}</span> and all associated performance records.
           </p>
         </div>
 
