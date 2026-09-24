@@ -1,5 +1,7 @@
 # EduTrack - Student Performance Analytics Platform
 
+> **Live Project:** https://edu-track-eight-dun.vercel.app/
+
 EduTrack is a full-stack web application designed for educational administrators to monitor, manage, and analyze student academic performance across subjects and monthly assessment cycles.
 
 ---
