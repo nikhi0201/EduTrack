@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://edutrack-backend-liud.onrender.com/api/:path*"
+    }
+  ]
+}
